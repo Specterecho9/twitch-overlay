@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sr-tracker,
+.kill-assist-tracker,
+.fees,
+.placement {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sr-progress {
+  width: 300px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  transition: width 0.5s ease;
+}
+
+.kill-assist-tracker,
+.fees,
+.placement {
+  font-size: 18px;
+}
+
+@media (max-width: 1280px) {
+  .overlay-container {
+    font-size: 14px;
+  }
+}

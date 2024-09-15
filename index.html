@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranked Play Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay-container">
+        <div class="sr-tracker">
+            <h2>Rank: <span id="division">Diamond I</span></h2>
+            <p>Current SR: <span id="sr-value">5490</span> / 6500</p>
+            <div class="sr-progress">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="kill-assist-tracker">
+            <h3>Kills: <span id="kills">0</span> | Assists: <span id="assists">0</span></h3>
+            <p>SR Gained: <span id="sr-gained">0</span></p>
+        </div>
+
+        <div class="fees">
+            <p>Deployment Fee: <span id="deployment-fee">-58 SR</span></p>
+            <p>Death Fee: <span id="death-fee">-5 SR</span></p>
+        </div>
+
+        <div class="placement">
+            <h3>Current Placement: <span id="placement">Top 12</span></h3>
+            <p>Stars Earned: <span id="stars">1</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
